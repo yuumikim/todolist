@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last Challenge</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="left">
+        <div id="left-top">
+          <div id="greeting" class="hidden"></div>
+          <form id="name-form" class="hidden">
+            <p id="name-form-p">WHAT IS YOUR <br />NAME??</p>
+            <input type="text" id="name-input" />
+          </form>
+          <div id="quote-area"></div>
+        </div>
+        <div id="left-bottom">
+          <div id="left-bottom-left">
+            <img src="./img/냥빵우유.png" alt="냥빵우유" />
+          </div>
+          <div id="left-bottom-right">
+            <div id="weather">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+            <div id="lbr-bottom"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="right-top">
+          <div id="date-area"></div>
+          <div id="rnd-img"></div>
+        </div>
+        <div id="right-bottom">
+          <h1>TO DO LIST</h1>
+          <form id="todo-form">
+            <input type="text" id="todo-input" maxlength="15" />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./src/todo.js"></script>
+    <script src="./src/quote.js"></script>
+    <script src="./src/script.js"></script>
+    <script src="./src/weather.js"></script>
+  </body>
+</html>

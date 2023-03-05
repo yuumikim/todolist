@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "ChosunSg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tenada";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Happiness-Sans-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+/* font-family: 'Cabin', sans-serif; */
+* {
+  font-family: "ChosunSg";
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.hidden {
+  opacity: 0;
+}
+#wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#left {
+  width: 50%;
+  height: 100%;
+}
+#left-top {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background-color: rgb(33, 151, 151);
+}
+#name-form {
+  width: 100%;
+  height: 80%;
+  /* padding: 2% 0 0 2%; */
+}
+#name-form-p {
+  font-size: 5.5rem;
+  font-family: "Happiness-Sans-Bold";
+}
+#greeting {
+  position: absolute;
+  color: #dfdfdf;
+  padding: 20% 0 0 5%;
+  font-family: "Cabin", sans-serif;
+  font-size: 5.5rem;
+}
+#name-input {
+  text-align: center;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 10px;
+  width: 20rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+#quote-area {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Tenada";
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(204, 60, 88);
+  vertical-align: middle;
+}
+#left-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+#left-bottom-left {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(58, 92, 185);
+  text-align: center;
+}
+#left-bottom-left > img {
+  height: 100%;
+}
+#left-bottom-right {
+  width: 50%;
+  height: 100%;
+}
+#weather {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(252, 178, 178);
+  font-family: "Cabin", sans-serif;
+  font-size: 4rem;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(154, 218, 151);
+}
+#lbr-bottom {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(142, 0, 61);
+}
+#right {
+  width: 50%;
+  height: 100%;
+}
+#right-top {
+  width: 100%;
+  height: 50%;
+}
+#date-area {
+  width: 100%;
+  height: 20%;
+  background-color: rgb(99, 190, 81);
+  font-size: 4rem;
+  font-family: "Happiness-Sans-Bold";
+}
+#rnd-img {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(233, 233, 91);
+}
+#right-bottom {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(231, 136, 149);
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Tenada";
+}
+#todo-input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  font-size: 2rem;
+  width: 30rem;
+}
+#todo-input:focus {
+  background-color: transparent;
+  outline: none;
+}
