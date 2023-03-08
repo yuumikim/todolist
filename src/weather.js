@@ -11,10 +11,10 @@ function geoOk(position){
       const weather = document.querySelector("#weather p:last-child");
       const city = document.querySelector("#weather p:first-child");
       const temp = document.querySelector("#weather p:nth-child(2)");
-      city.innerText = data.name;
-      weather.innerText = data.weather[0].main;
-      temp.innerText = data.main.temp;
-      console.log(data.name, data.weather[0].main);
+      city.innerText = data.name + "/"+data.sys.country;
+      weather.innerText =data.weather[0].main;
+      temp.innerText = data.main.temp+ " ℃"
+      console.log(data.sys.country);
     });
 }
 function geoError() {

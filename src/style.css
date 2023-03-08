@@ -136,11 +136,45 @@ a {
   width: 100%;
   height: 50%;
   background-color: rgb(154, 218, 151);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+#weather p{
+  color:rgb(99, 56, 255);
+  font-weight: bold;
+}
+
 #lbr-bottom {
   width: 100%;
   height: 50%;
-  background-color: rgb(142, 0, 61);
+  background-color: rgb(255, 201, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eye{
+margin: 5px;
+  width:45%;
+  height: 30%;
+  background-color: #fff;
+  border-radius: 40px; 
+}
+.circle{
+  width: 32%;
+  height:100%;
+  background-color: black;
+  border-radius: 50px;
+  animation: roll 2s linear 1s infinite alternate-reverse;
+}
+@keyframes roll {
+  from{
+      margin-left: 0;
+  }
+  to{
+    margin-left: 68%;
+  }
+  
 }
 #right {
   width: 50%;
