@@ -14,7 +14,7 @@ const quotes = [
   "돈이 전부는 아니지만 또 그만한게 없지",
 ];
 
-const quote = document.getElementById("quote-area");
+const quote = document.getElementById("quote-p");
 
 quote.innerText =
   "오늘의 띵언 : " + quotes[Math.floor(Math.random() * quotes.length)];

@@ -1,6 +1,6 @@
 const apiKey = "18b0471602c0cc7136647a8ec13d8de4";
 
-function geoOk(position) {
+function geoOk(position){
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
@@ -14,7 +14,6 @@ function geoOk(position) {
       city.innerText = data.name;
       weather.innerText = data.weather[0].main;
       temp.innerText = data.main.temp;
-
       console.log(data.name, data.weather[0].main);
     });
 }

@@ -1,5 +1,21 @@
 @charset "utf-8";
-
+@media all and (max-width: 1024px){
+ 
+	/* //브라우저 창 width가 1024px보다 작아지는 순간부터 적용
+	//태블릿 */
+}
+@media all and (max-width: 768px){
+	/* //브라우저 창 width가 768px보다 작아지는 순간부터 적용
+	//모바일 */
+}
+@media all and (min-width: 768px){
+	/* //브라우저 창 width가 768px보다 커지는 순간부터 적용
+	//태블릿 */
+}
+@media all and (min-width: 1024px){
+	/* //브라우저 창 width가 1024px보다 커지는 순간부터 적용
+	//데스크탑 */
+}
 @font-face {
   font-family: "ChosunSg";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff")
@@ -55,7 +71,7 @@ a {
 #name-form {
   width: 100%;
   height: 80%;
-  /* padding: 2% 0 0 2%; */
+  padding-left: 2rem;
 }
 #name-form-p {
   font-size: 5.5rem;
@@ -63,9 +79,9 @@ a {
 }
 #greeting {
   position: absolute;
-  color: #dfdfdf;
-  padding: 20% 0 0 5%;
-  font-family: "Cabin", sans-serif;
+  color: #ffffff;
+  padding: 10% 0 0 5%;
+  font-family: "Happiness-Sans-Bold";
   font-size: 5.5rem;
 }
 #name-input {
@@ -79,14 +95,19 @@ a {
   font-size: 2rem;
 }
 #quote-area {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Tenada";
-  text-align: center;
   width: 100%;
   height: 20%;
   background-color: rgb(204, 60, 88);
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#quote-p{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Tenada";
+  color: rgb(255, 201, 201);
 }
 #left-bottom {
   width: 100%;
@@ -133,8 +154,15 @@ a {
   width: 100%;
   height: 20%;
   background-color: rgb(99, 190, 81);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#date-p{
   font-size: 4rem;
-  font-family: "Happiness-Sans-Bold";
+  font-family: 'Cabin', sans-serif;
+  color:rgb(18, 122, 87);
+  font-weight: bold;
 }
 #rnd-img {
   width: 100%;
@@ -151,17 +179,38 @@ a {
   background-color: rgb(231, 136, 149);
 }
 h1 {
-  font-size: 2.5rem;
+  padding-top:20px;
+  font-size: 5rem;
   font-family: "Tenada";
+  color:rgb(190, 250, 187);
 }
 #todo-input {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgb(190, 250, 187);;
   background-color: transparent;
   font-size: 2rem;
   width: 30rem;
+  color:rgb(190, 250, 187);
 }
 #todo-input:focus {
   background-color: transparent;
   outline: none;
+}
+#todo-list>li{
+  font-size:2rem;
+  padding:10px;
+}
+#todo-list>li>span{
+  font-family: "Happiness-Sans-Bold";
+  color:rgb(190, 250, 187);
+}
+#todo-list button{
+  background:none;
+  border: none;
+  font-size: 2rem;
+  font-family: "Happiness-Sans-Bold";
+  color:rgb(190, 250, 187);
+}
+#todo-list button:hover{
+  color:rgb(139, 21, 0);
 }
